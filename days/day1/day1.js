@@ -1,7 +1,3 @@
-/*
-	How many measurements are larger than the previous measurement?
-*/
-
 const fs = require("fs");
 
 const textData = fs.readFileSync(__dirname + "/input.txt", { encoding: "utf8", flag: "r" });
