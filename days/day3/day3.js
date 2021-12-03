@@ -51,7 +51,6 @@ console.log("- Part 2");
 
     function reduceArray(arr, index, co2 = false) {
         if (arr.length === 1) {
-            console.log(arr);
             return arr;
         }
 
