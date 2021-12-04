@@ -6,12 +6,8 @@ const data = textData.split("\r\n").map((e) => {
     return { dir: splitted[0], steps: parseInt(splitted[1]) };
 });
 
-console.log("--------------");
-console.log("/*  Day 2:  */");
-
+console.log("\x1b[32m%s\x1b[0m", "- Part 1");
 {
-    console.log("- Part 1");
-
     let horizontalPos = 0,
         depth = 0;
 
@@ -33,9 +29,8 @@ console.log("/*  Day 2:  */");
     console.log(`Final output: ${horizontalPos * depth}`);
 }
 
+console.log("\x1b[32m%s\x1b[0m", "\n- Part 2");
 {
-    console.log("- Part 2");
-
     let horizontalPos = 0,
         depth = 0,
         aim = 0;

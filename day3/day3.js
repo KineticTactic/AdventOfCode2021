@@ -3,10 +3,7 @@ const fs = require("fs");
 const textData = fs.readFileSync(__dirname + "/input.txt", { encoding: "utf8", flag: "r" });
 const data = textData.split("\r\n");
 
-console.log("--------------");
-console.log("/*  Day 3:  */");
-
-console.log("- Part 1");
+console.log("\x1b[32m%s\x1b[0m", "- Part 1");
 
 {
     let gammaRateBin = "";
@@ -39,7 +36,7 @@ console.log("- Part 1");
     console.log(`Power Consumption: ${powerConsumption}`);
 }
 
-console.log("- Part 2");
+console.log("\x1b[32m%s\x1b[0m", "\n- Part 2");
 {
     const O2genRating = parseInt(reduceArray(data, 0)[0], 2);
     const CO2genRating = parseInt(reduceArray(data, 0, true)[0], 2);

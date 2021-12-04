@@ -3,12 +3,9 @@ const fs = require("fs");
 const textData = fs.readFileSync(__dirname + "/input.txt", { encoding: "utf8", flag: "r" });
 const data = textData.split("\r\n").map((e) => parseInt(e));
 
-console.log("--------------");
-console.log("/*  Day 1:  */");
-
 // -------------- Part 1 ---------------------
 
-console.log("- Part 1");
+console.log("\x1b[32m%s\x1b[0m", "- Part 1");
 
 {
     let increasedCount = 0;
@@ -23,7 +20,7 @@ console.log("- Part 1");
 
 // -------------- Part 2 ---------------------
 
-console.log("- Part 2");
+console.log("\x1b[32m%s\x1b[0m", "\n- Part 2");
 
 {
     let increasedCount = 0;

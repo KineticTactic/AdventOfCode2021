@@ -1,6 +1,3 @@
-console.log("--------------");
-console.log("/*  Day 4:  */");
-
 const fs = require("fs");
 
 const textData = fs.readFileSync(__dirname + "/input.txt", { encoding: "utf8", flag: "r" });
@@ -22,7 +19,7 @@ const originalTables = data.map((e) => {
     return rows;
 });
 
-console.log("- Part 1");
+console.log("\x1b[32m%s\x1b[0m", "- Part 1");
 
 {
     let tables = originalTables.slice();
@@ -44,7 +41,7 @@ console.log("- Part 1");
     }
 }
 
-console.log("- Part 2");
+console.log("\x1b[32m%s\x1b[0m", "\n- Part 2");
 {
     let tables = originalTables.slice();
 
